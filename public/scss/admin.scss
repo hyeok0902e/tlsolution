@@ -1,0 +1,215 @@
+.admin{
+    display:none;
+    z-index: 2;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    .admin_top{
+        width:100%;
+        height:86px;
+        border-bottom: 1px solid #E2E2E2;
+        background:white;
+
+        .temp_logo{
+            width:180px;
+            height:100%;
+            margin-left:36px;
+            background:url('/image/logo_black.svg') no-repeat;
+            background-position:center;
+            background-size:contain;
+        }
+    }
+
+    .flex_box{
+        display: flex;
+        width:100%;
+        height:100%;
+    }
+
+    .admin_left{
+        flex-basis:256px;
+        flex-shrink: 0;
+        border-right: 1px solid #E2E2E2;
+        background:white;
+        
+        ul{
+            margin-top:24px;
+            list-style: none;
+            font-weight:700;
+            color:#676767;
+            li{
+                margin:0 40px;
+                padding:20px 0;
+                text-align: right;
+                border-bottom: 1px solid #eee;
+            }
+            a:last-child{
+                li{
+                    border:0;
+                }
+            }
+            .menu_01{
+                background:url('/image/ico_dashboard.png') no-repeat left;
+                background-size:25px;
+            }
+            .menu_02{
+                background:url('/image/ico_page.png') no-repeat left;
+                background-size:24px;
+            }
+        }
+    }
+
+    .admin_right{
+        flex-grow: 1;
+        height: 100%;
+        overflow: auto;
+        background:#F4F4F4 url(/image/bg_blendline.svg) no-repeat;
+        background-position: center;
+        background-size:cover;
+        flex-basis: max-content;
+
+        
+    }
+}
+
+.admin_section{
+    display:flex;
+    align-items: baseline;
+    padding:30px;
+    margin-bottom: 90px;
+    flex-wrap: wrap;
+    color:#676767;
+
+    h2{
+        font-size:28px;
+        font-weight: 700;
+        line-height: 35px;
+    }
+
+    h4{
+        color:#A8A8A8;
+        font-weight: 500;
+    }
+
+    .box_normal{
+        padding:32px;
+        margin:10px;
+        width: 344px;
+        height:300px;
+        background:white;
+        border-radius: 15px;
+        box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+
+        .temp_bignum{
+            font-size:110px;
+            font-weight: 100;
+            letter-spacing: -5px;
+            margin-top:10px;
+            text-align: center;
+        }
+    }
+
+    .box_newask{
+        padding:32px;
+        margin:10px;
+        width: 344px;
+        background:white;
+        border-radius: 15px;
+        box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+
+        h3{
+            font-weight: 600;
+            letter-spacing: 0;
+        }
+
+        h5{
+            color:#B2B2B2;
+            letter-spacing: 0;
+        }
+
+        .temp_line{
+            width:100%;
+            height:1px;
+            margin:20px 0;
+            background:#E2E2E2;
+        }
+
+        .temp_title{
+            font-weight: 700;
+            color:#888;
+            
+            .temp_circle{
+                background:#888;
+                width:12px;
+                height:12px;
+                border-radius: 12px;
+                display: inline-block;
+                margin-right:10px;
+            }
+        }
+
+        .red{
+            color:#D16030;
+
+            .temp_circle{
+                background:#D16030;
+            }
+        }
+
+        .green{
+            color:#166A69;
+
+            .temp_circle{
+                background:#166A69;
+            }
+        }
+
+        .temp_text{
+            width:100%;
+            padding:10px 0;
+            letter-spacing: 0;
+            .choice_tag{
+                margin:5px;
+                font-size:14px;
+                padding:2px 20px;
+                background:#f3f3f3;
+                display: inline-block;
+                border-radius: 15px;
+            }
+            table{
+                margin-left:5px;
+                tr{
+                    height:30px;
+                }
+                td:first-child{
+                    width:100px;
+                }
+                td:last-child{
+
+                }
+            }
+        }
+
+        .explain{
+            width:auto;
+            margin:0 10px;
+            word-break: keep-all;
+        }
+    }
+
+    .new_ask{
+        width:100%;
+        height:auto;
+    }
+
+}
+
+@media screen and (max-width:750px) {
+    .admin{
+        .admin_left{
+            display: none;
+        }
+    }
+}

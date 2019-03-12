@@ -1,0 +1,245 @@
+<section class="section_01 section_assembles_01">
+    <article>
+        <h1>
+            예상견적<br>
+            확인하기.<br>
+        </h1>
+
+        <div class="temp_line"></div>
+
+        <div class="temp_description">
+
+            <div class="temp_box"></div>
+
+            <h3 class="temp_01">
+                기본 기능과 정말 필요한 기능으로<br>
+                예상 견적을 확인해보세요.
+            </h3>
+
+        </div>
+
+    </article>
+    <div class="bg_blendline"></div>
+</section>
+
+<form id="estimate_form" method="POST" action="/assembles">
+
+<div class="price_shortbox fn-d_none">
+    전체 견적 확인
+    <div class="temp_btn">확인</div>
+</div>
+
+<div class="send_box">
+
+    <div class="temp_circle"></div>
+    <div class="temp_title">견적 문의하기</div>
+    <div class="temp_line"></div>
+
+    <div class="input_flex">
+
+        <div>
+            <input name="name" id="send_input_01" type="text" class="send_input_text" required></input>
+            <label class="send_label_01" for="send_input_01">이름*</label>
+        </div>
+        
+        <div>
+            <input name="tel" id="send_input_02" type="text" class="send_input_phone" required></input>
+            <label class="send_label_01" for="send_input_02">전화번호*</label>
+        </div>
+
+        <div>
+            <input name="email" id="send_input_03" type="text" class="send_input_text" required></input>
+            <label class="send_label_01" for="send_input_03">이메일*</label>
+        </div>
+
+        <div>
+            <input name="corp" id="send_input_03" type="text" class="send_input_text"></input>
+            <label class="send_label_01" for="send_input_03">회사명</label>
+        </div>
+        
+        <textarea name="explain" class="send_input_explain" placeholder="여러분의 아이디어를 적어주세요."></textarea>
+
+        <input type="submit" class="send_input_submit" value="제출"></input>
+    </div>
+
+</div>
+
+<section class="section_assembles_02">
+    <article>
+
+        <div class="temp_flex">
+            
+            <div class="assemble_flex">
+                
+                <!-- 유형 -->
+
+                <div class="title_02">
+
+                    <h4 class="-box_01">유형</h4><br>
+                    여러분이 생각하는 아이디어는 어떤 형태인가요?<br>
+                    ( 필수, 하나만 선택 )
+
+                </div>
+
+                <div class="flex_box">
+
+                    <input type="radio" name="type" value="커뮤니티" id="type01_r01" class="box_chk01"></input>
+                    <label class="box_01" for="type01_r01">
+
+                        <h6 class="temp_type">유형</h6>
+                        <h4 class="temp_title">커뮤니티</h4>
+                        <hr class="hr1">
+                        <h6 class="temp_explain"><span>기본적으로 개인과 개인 또는 개인과 그룹이 자유롭게 컨텐츠(텍스트, 이미지 또는 비디오)를 통해서 소통하는 커뮤니티 플랫폼</span></h6>
+                        <hr class="hr1">
+                        <h4 class="fn-i_block">페이스북, 인스타, 소모임 등</h4>
+                        <div class="-icon01"></div>   
+                        <div class="-icon02"></div>
+
+                    </label>
+
+                    <input type="radio" name="type" value="연결" id="type01_r02" class="box_chk01"></input>
+                    <label class="box_01" for="type01_r02">
+
+                        <h6 class="temp_type">유형</h6>
+                        <h4 class="temp_title">연결</h4>
+                        <hr class="hr1">
+                        <h6 class="temp_explain"><span>개인과 개인(또는 개인사업자)을 특정 제품이나 서비스를 통해서 연결해주는 플랫폼</span></h6>
+                        <hr class="hr1">
+                        <h4 class="fn-i_block">중고나라, 직방, 야놀자 등</h4>
+                        <div class="-icon01"></div>   
+                        <div class="-icon02"></div>
+
+                    </label>
+
+                    <input type="radio" name="type" value="액세스" id="type01_r03" class="box_chk01"></input>
+                    <label class="box_01" for="type01_r03">
+
+                        <h6 class="temp_type">유형</h6>
+                        <h4 class="temp_title">액세스</h4>
+                        <hr class="hr1">
+                        <h6 class="temp_explain"><span>연결 타입과 상당히 비슷해 보이나, 실질적인 제품 및 서비스가 하나의 공급자에 의해서 이루어지는 플랫폼</span></h6>
+                        <hr class="hr1">
+                        <h4 class="fn-i_block">타다, 쏘카 등</h4>
+                        <div class="-icon01"></div>   
+                        <div class="-icon02"></div>
+
+                    </label>
+
+                    <input type="radio" name="type" value="IoT" id="type01_r04" class="box_chk01"></input>
+                    <label class="box_01" for="type01_r04">
+
+                        <h6 class="temp_type">유형</h6>
+                        <h4 class="temp_title">IoT</h4>
+                        <hr class="hr1">
+                        <h6 class="temp_explain"><span>Bluetooth 또는 WI-FI 네트워크를 사용한 IoT 장치를 위한 모바일 어플리케이션 개발</span></h6>
+                        <hr class="hr1">
+                        <h4 class="fn-i_block">스마트전구, 스마트홈 등</h4>
+                        <div class="-icon01"></div>   
+                        <div class="-icon02"></div>
+
+                    </label>
+
+                    <input type="radio" name="type" value="커스터" id="type01_r05" class="box_chk01"></input>
+                    <label class="box_01" for="type01_r05">
+
+                        <h6 class="temp_type">유형</h6>
+                        <h4 class="temp_title">커스텀</h4>
+                        <hr class="hr1">
+                        <h6 class="temp_explain"><span>제시된 유형이 아닌 독창적인 플랫폼, 소프트웨어</span></h6>
+                        <hr class="hr1">
+                        <h4 class="fn-i_block">문의</h4>
+                        <div class="-icon01"></div>   
+                        <div class="-icon02"></div>
+
+                    </label>
+
+                </div>
+
+                <!-- 플랫폼 -->
+
+                <div class="title_02">
+
+                    <h4 class="-box_01">플랫폼</h4><br>
+                    아이디어를 표현할 플랫폼은 어디인가요?<br>
+                    ( 필수, 중복 가능 )
+
+                </div>
+
+                <div class="flex_box">
+
+                    <input name="platform" value="Android" type="checkbox" id="type02_c01" class="box_chk01"></input>
+                    <label class="box_01" for="type02_c01">
+
+                        <h6 class="temp_type">플랫폼</h6>
+                        <h4 class="temp_title">Android</h4>
+                        <hr class="hr1">
+                        <h6 class="temp_explain"><span>코틀린을 통해 개발합니다. 전세계에서 가장 많이 쓰는 모바일 OS인 안드로이드로 개발합니다.</span></h6>
+                        <hr class="hr1">
+                        <h4 class="fn-i_block">개발 : Kotlin</h4>
+                        <div class="-icon01"></div>   
+                        <div class="-icon02"></div>
+
+                    </label>
+
+                    <input name="platform" value="iOS" type="checkbox" id="type02_c02" class="box_chk01"></input>
+                    <label class="box_01" for="type02_c02">
+
+                        <h6 class="temp_type">플랫폼</h6>
+                        <h4 class="temp_title">iOS</h4>
+                        <hr class="hr1">
+                        <h6 class="temp_explain"><span>Swift를 통해 개발합니다. 인간 중심적인 인터페이스와 세상에서 가장 앞선 모바일 OS인 iOS로 개발합니다.</span></h6>
+                        <hr class="hr1">
+                        <h4 class="fn-i_block">개발 : Swift</h4>
+                        <div class="-icon01"></div>   
+                        <div class="-icon02"></div>
+
+                    </label>
+
+                    <input name="platform" value="웹앱" type="checkbox" id="type02_c03" class="box_chk01"></input>
+                    <label class="box_01" for="type02_c03">
+
+                        <h6 class="temp_type">플랫폼</h6>
+                        <h4 class="temp_title">웹앱</h4>
+                        <hr class="hr1">
+                        <h6 class="temp_explain"><span>node.js를 통해 개발합니다. 빠르고, 안정성이 높으며 가장 많이 사용되는 서버 프레임워크입니다.</span></h6>
+                        <hr class="hr1">
+                        <h4 class="fn-i_block">개발 : node.js</h4>
+                        <div class="-icon01"></div>   
+                        <div class="-icon02"></div>
+
+                    </label>
+
+                </div>
+
+            </div>
+  
+            <div class="blind_black temp_price_blind"></div>
+
+            <div class="price_flex">
+
+                <div class="price_box">
+                    <div class="temp_circle"></div>
+                    <div class="temp_text01">견적문의</div>
+                    <div class="temp_cale"><h2>1,000,000</h2> 원</div>
+                    <div class="temp_line"></div>
+                    <h5 class="temp_check js_view_check">
+                        <p class="temp_text03">( 선택사항이 표시됩니다 )</p>
+                    </h5>
+                    <div class="temp_line"></div>
+                    <h5 class="temp_text02">예상 견적으로 실제 견적과 다를 수 있습니다.</h5>
+                </div>
+
+                <div class="btn_02 fn-d_none js_write">예상 견적으로 견적 문의하기</div>
+                <div class="btn_02 btn_02_block">( 필수 항목을 모두 선택해주세요 )</div>
+                <div class="btn_02 fn-d_none btn_02_back js_back">돌아가기</div>
+                
+            </div>
+
+        </div>
+
+    </article>
+</section>
+
+</form>
+<!-- assembles front js -->
+<script type="text/javascript" src="/javascripts/estimate.js"></script>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/stylesheets/home.css">
+  <link rel="stylesheet" href="/stylesheets/layout.css">
+  <link rel="stylesheet" href="/stylesheets/module.css">
+  <link rel="stylesheet" href="/stylesheets/assembles.css">
+  <link rel="stylesheet" href="/stylesheets/admin.css">
+  <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+  <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css' rel='stylesheet' type='text/css'>
+  <title>TL 솔루션</title>
+  <title>TL Solution</title>
+</head>
+<body ontouchstart="">
+
+  <!-- 스타트업 통합 개발 솔루션 :: TL Solution, 여러분, 환영합니다! -->
+
+  <div class="bg_blendline"></div>
+  <div class="blind_black"></div>
+
+  <!-- 기본 템플릿 시작 -->
+  <header>
+
+    <a href="/">
+      <div class="temp_logo"></div>
+    </a>
+
+    <div class="temp_menu">
+      <div class="temp_tel">010-0000-0000</div>
+      <a href="/assembles">견적문의</a>
+    </div>
+
+  </header>
+
+  <div class="container">
+    <%- body %>
+  </div>
+
+  <footer>
+    <article>
+
+      <div class="temp_flex">
+
+        <div class="temp_logo"></div>
+        <div class="temp_line"></div>
+        <h5 class="temp_text">
+
+            (주) TL<br>
+            사업자 등록번호 : 000-00-00000<br>
+            법인 등록번호 : 01000-00000<br>
+            대표 방민석<br>
+            <br>
+            서울시 동대문구 장안동<br>
+            인스모드 빌딩 3층<br>
+            <br>
+            copyright TL. all right reserved.
+
+        </h5>
+        <div class="temp_line"></div>
+        <div class="temp_tel">
+          <h5>견적문의가 필요하신가요?</h5><br>
+          <h2>010-0000-0000</h2>
+          <h5>info@tlsolution.com</h5>
+        </div>
+
+      </div>
+
+    </article>
+  </footer>
+  <!-- 기본 템플릿 끝 -->
+
+  <!-- 어드민 템플릿 시작 -->
+  <div class="admin">
+
+      <div class="admin_top">
+        <a href="/"><div class="temp_logo"></div></a>
+      </div>
+
+    <div class="flex_box">
+
+      <aside class="admin_left">
+        <ul>
+          <a href="/admin_home"><li class="menu_01">상황판</li></a>
+          <a href="/admin_detail"><li class="menu_02">견적문의</li></a>
+        </ul>
+      </aside>
+
+      <aside class="admin_right"><%- body %></aside>
+      
+    </div>
+  </div>
+  <!-- 어드민 템플릿 끝 -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/assembles.js"></script>
+  <script src="js/admin_home.js"></script>
+</body>
+</html>

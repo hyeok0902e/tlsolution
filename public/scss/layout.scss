@@ -1,0 +1,194 @@
+*{margin:0; padding:0;}
+body{-webkit-tap-highlight-color:transparent;margin:0;letter-spacing: -1.2px;font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; color:#333; }
+p{margin:0;}
+a{ text-decoration: none; color:inherit;}
+a:active,a:focus{outline: 0;}
+input{outline:0;cursor: pointer;border-radius: 0;}
+input:active,input:focus{outline: inherit;}
+input[type="text"]{-webkit-appearance: none; border:1px solid #ddd;;transition:.25s;}
+input[type="text"]:focus, input[type="number"]:focus{border:1px solid #6485CE;transition:.25s;};
+input[type="number"]{-webkit-appearance: none; border:1px solid #ddd;transition:.25s;}
+input[type="submit"]{-webkit-appearance: none;}
+textarea{border-radius:0;outline:0;-webkit-appearance: none;}
+h1{font-size:110px; letter-spacing:-0.05em;margin:0;font-weight: 100;line-height:147px;}
+h2{font-size:32px; margin:0;font-weight: 300;line-height:40px;}
+h3{font-size:18px; margin:0;font-weight: 500;line-height:25px;}
+h4{font-size:16px; margin:0;font-weight: 500;line-height:25px;}
+h5{font-size:14px; margin:0;font-weight: 500;line-height:25px;}
+h6{font-size:12px; margin:0;font-weight: 500;line-height:25px;}
+.hr1{margin:5px auto;width:600px;border:.5px solid #CBC9C9;}
+.fn-f_left{float: left; display:block;}.fn-f_right{float: right;}.fn-i_block{display: inline-block;}.fn-d_none{display: none;}.fn-t_align_center{text-align: center;}
+
+.blind_black{
+    top:0;
+    left:0;
+    cursor: pointer;
+    display:none;
+    background:rgba(0,0,0,0.5);
+    z-index:4;
+    position: fixed;
+    width:100%;
+    height:100%;
+}
+
+.bg_blendline{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background:url(/image/bg_blendline.svg) no-repeat;
+    background-size:cover;
+    background-position: center;
+    z-index: 1;
+    transition:.25s;
+}
+
+header{
+    position: fixed;
+    width:100%;
+    height: 114px;
+    z-index: 3;
+    background:rgba(44,44,44,0.5);
+
+    .temp_logo{
+        width:188px;
+        height:100%;
+        background:url(/image/logo_white.svg) no-repeat;
+        background-position: center;
+        margin-left:48px;
+        float: left;
+    }
+
+    .temp_menu{
+        height:100%;
+        padding:0 40px;
+        text-align: center;
+        float:right;
+        line-height: 114px;
+
+        *{
+            float: left;
+            margin:0 16px;
+            color:white;
+        }
+
+        .temp_tel{
+            letter-spacing: 0;
+        }
+    }
+}
+
+footer{
+    margin-top:20px;
+    width:100%;
+    background:#2F2F2F;
+
+    .temp_flex{
+        padding: 40px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .temp_logo{
+            width:300px;
+            background:url(/image/logo.png) no-repeat;
+            background-size:97px 53px;
+            background-position: center;
+        }
+        .temp_line{
+            width:1px;
+            height:223px;
+            margin:0 24px;
+            background:#454545;
+        }
+        .temp_text{
+            width:300px;
+            color:#868686;
+            line-height: 25px;
+            letter-spacing: 0px;
+
+        }
+        .temp_tel{
+            width:300px;
+            color:white;
+            letter-spacing: 0px;
+
+        }
+
+    }
+
+}
+
+
+
+section{
+    position: relative;
+    z-index: 2;
+}
+
+article{
+    max-width:1167px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+@media screen and (max-width:1167px) {
+    h1{
+        font-size:65px;
+        line-height:88px;
+        letter-spacing:-0.06em;
+    }
+
+    header{
+        height:90px;
+
+        *{
+            line-height: 90px;
+            }
+    }
+
+    footer{
+        .temp_flex{
+
+            .temp_logo{
+                width:100%;
+                height:100px;
+                background-position: top;
+            }
+            .temp_line{
+                display: none;
+            }
+            .temp_text{
+                margin-bottom:15px;
+            }
+
+        }
+    }
+}
+
+
+@media screen and (max-width:750px) {
+
+    header{
+        height:76px;
+
+        *{
+            line-height: 76px;
+        }
+
+        .temp_logo{
+            margin-left:26px;
+            width:160px;
+        }
+        
+        .temp_menu{
+            padding: 0 20px;
+
+            .temp_tel{
+                display: none;
+            }
+
+        }
+
+    }
+
+}

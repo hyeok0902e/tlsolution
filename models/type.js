@@ -1,0 +1,17 @@
+/*
+
+*/ 
+module.exports = (sequelize, DataTypes) => {
+  return sequelize.define('type',{
+    title: {
+      type: DataTypes.STRING(15),
+      allowNull: false,
+      unique: true,
+    }, 
+  }, {
+    timestamps: true,
+    paranoid: true,
+    charset: 'utf8',
+    collate: 'utf8_general_ci',
+  });
+};

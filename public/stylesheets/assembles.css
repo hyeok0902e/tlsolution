@@ -1,0 +1,217 @@
+.section_assembles_01 {
+  padding: 78px 0;
+  z-index: 2; }
+  .section_assembles_01 .temp_line {
+    height: 300px; }
+
+.price_shortbox {
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  width: 300px;
+  height: 34px;
+  background: #fff;
+  border: 1px solid #ddd;
+  z-index: 3;
+  left: 50%;
+  margin-left: -165px;
+  line-height: 34px;
+  text-align: center;
+  padding: 15px; }
+  .price_shortbox .temp_btn {
+    margin-left: 15px;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    width: 70px;
+    color: white;
+    background: #6485CE;
+    border-radius: 50px;
+    text-align: center; }
+
+.send_box {
+  display: none;
+  width: 603px;
+  position: fixed;
+  background: white;
+  border: 1px solid #ddd;
+  left: 50%;
+  top: 50%;
+  margin-top: -354px;
+  margin-left: -354px;
+  padding: 36px 52px;
+  z-index: 5; }
+  .send_box .temp_circle {
+    width: 39px;
+    height: 39px;
+    margin: 0 auto 12px;
+    background: #6485CE url(/image/ico_chk_white.png) no-repeat;
+    background-position: center;
+    background-size: 40%;
+    border-radius: 50px; }
+  .send_box .temp_title {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px; }
+  .send_box .temp_line {
+    width: 100%;
+    height: 1px;
+    background: #CBC9C9;
+    margin-bottom: 24px; }
+  .send_box .input_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%; }
+    .send_box .input_flex div {
+      position: relative; }
+    .send_box .input_flex .send_label_01 {
+      display: inline-block;
+      top: 0;
+      left: 0;
+      position: absolute;
+      margin: 13px 20px;
+      font-size: 20px;
+      font-weight: 500;
+      color: #777;
+      transition: .25s;
+      z-index: 3; }
+    .send_box .input_flex input:focus + .send_label_01, .send_box .input_flex input:valid + .send_label_01,
+    .send_box .input_flex textarea:focus + .send_label_01, .send_box .input_flex textarea:valid + .send_label_01 {
+      transition: .25s;
+      font-size: 14px;
+      margin: 8px 12px; }
+    .send_box .input_flex .send_input_text {
+      position: relative;
+      display: inline-block;
+      height: 42px;
+      width: 266px;
+      padding: 6px 12px;
+      text-align: right;
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 16px;
+      z-index: 2; }
+    .send_box .input_flex .send_input_phone {
+      position: relative;
+      display: inline-block;
+      height: 42px;
+      width: 266px;
+      padding: 6px 12px;
+      text-align: right;
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 16px;
+      z-index: 2; }
+    .send_box .input_flex .send_input_explain {
+      width: 100%;
+      height: 246px;
+      padding: 12px;
+      line-height: 24px;
+      border: 1px solid #ddd;
+      font-size: 16px; }
+    .send_box .input_flex .send_input_submit {
+      width: 100%;
+      height: 52px;
+      background: #2F2F2F;
+      border: 0;
+      color: white;
+      margin: 12px 0;
+      font-size: 14px; }
+
+.section_assembles_02 {
+  background: rgba(255, 255, 255, 0.7); }
+  .section_assembles_02 .temp_flex {
+    display: flex; }
+    .section_assembles_02 .temp_flex .assemble_flex {
+      flex-basis: 63%; }
+      .section_assembles_02 .temp_flex .assemble_flex .flex_box {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap; }
+      .section_assembles_02 .temp_flex .assemble_flex .flex_box::after {
+        content: "";
+        width: 254px;
+        margin: 24px 12px;
+        padding: 19px 25px; }
+    .section_assembles_02 .temp_flex .price_flex {
+      width: 37%;
+      flex-basis: 37%;
+      position: fixed;
+      left: 61%;
+      bottom: 0; }
+      .section_assembles_02 .temp_flex .price_flex .price_box {
+        padding: 24px;
+        margin: 0 auto;
+        max-width: 283px;
+        background: #fff;
+        border: 1px solid #DDD;
+        text-align: center; }
+        .section_assembles_02 .temp_flex .price_flex .price_box .temp_circle {
+          width: 40px;
+          height: 40px;
+          margin: 12px auto;
+          border-radius: 40px;
+          background: #6485CE url(/image/ico_chk_white.png) no-repeat;
+          background-position: center;
+          background-size: 40%; }
+        .section_assembles_02 .temp_flex .price_flex .price_box .temp_text01 {
+          font-weight: 700;
+          margin-bottom: 24px; }
+        .section_assembles_02 .temp_flex .price_flex .price_box .temp_cale {
+          display: none;
+          font-weight: 700;
+          color: #BCBCBC;
+          margin-bottom: 48px; }
+          .section_assembles_02 .temp_flex .price_flex .price_box .temp_cale h2 {
+            display: inline-block;
+            letter-spacing: 1px;
+            color: #464646; }
+        .section_assembles_02 .temp_flex .price_flex .price_box .temp_line {
+          width: 100%;
+          height: 1px;
+          background: #CBC9C9; }
+        .section_assembles_02 .temp_flex .price_flex .price_box .temp_check {
+          margin: 24px 0 24px 12px;
+          text-align: left;
+          letter-spacing: 0; }
+        .section_assembles_02 .temp_flex .price_flex .price_box .temp_text02 {
+          margin-top: 12px;
+          color: #BCBCBC; }
+        .section_assembles_02 .temp_flex .price_flex .price_box .temp_text03 {
+          color: #bcbcbc; }
+
+@media screen and (max-width: 1167px) {
+  .section_assembles_01 {
+    padding: 90px 0; }
+    .section_assembles_01 .temp_line {
+      height: 200px; }
+    .section_assembles_01 .temp_box {
+      display: none; } }
+
+@media screen and (max-width: 750px) {
+  .price_shortbox {
+    display: block; }
+  .send_box {
+    width: 330px;
+    margin-left: -185px;
+    margin-top: -324px;
+    padding: 20px; }
+    .send_box .input_flex .send_input_text {
+      width: 300px; }
+    .send_box .input_flex .send_input_phone {
+      width: 300px; }
+    .send_box .input_flex .send_input_explain {
+      height: 100px; }
+  .section_assembles_01 {
+    padding: 129px 0; }
+  .section_assembles_02 .temp_flex .assemble_flex {
+    flex-basis: 100%; }
+  .section_assembles_02 .temp_flex .price_flex {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    display: none;
+    z-index: 5; }
+    .section_assembles_02 .temp_flex .price_flex .btn_02_back {
+      display: block; } }
